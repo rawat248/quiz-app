@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="my-form">
+        <p id="p1">1.Recently,'Shiomara Castro' has become the first female president of which
+            country?</p><br>
+        <input type="radio" name="question1" id="correct1" />Honduras
+        <input type="radio" name="question1" />Panama
+        <input type="radio" name="question1" />Haiti
+        <input type="radio" name="question1" />Nicaragua
+        <br><br>
+        <p id="p2">2.Recently, which player has won the men's singles title in the
+            australian open 2022? </p><br>
+        <input type="radio" name="question2" />Daniil Medvedev
+        <input type="radio" name="question2">Roger Federer
+        <input type="radio" name="question2">Novak Djokovic
+        <input type="radio" name="question2" id="correct2">Rafael Nadal
+        <br><br>
+        <p id="p3">3.Recently,in which city India's largest EV Charging Station with 100
+            charging points has opened? </p><br>
+        <input type="radio" name="question3">Shimla
+        <input type="radio" name="question3">Jodhpur
+        <input type="radio" name="question3" id="correct3">Gurugram
+        <input type="radio" name="question3">Gwalior
+        <br><br>
+        <p id="p4">4.Recently,what is the rank of india in the 'coruption perception index'
+            for the year 2021 released?</p><br>
+        <input type="radio" name="question4">89th
+        <input type="radio" name="question4">94th
+        <input type="radio" name="question4" id="correct4">85th
+        <input type="radio" name="question4">78th
+        <br><br>
+        <p id="p5">5.Which ministry has released a comic book titled 'India's women unsung
+            heroes?</p><br>
+        <input type="radio" name="question5">Ministry of Education
+        <input type="radio" name="question5">Ministry of Defense
+        <input type="radio" name="question5">Ministry of Home Affairs
+        <input type="radio" name="question5" id="correct5">Ministry of Culture
+        <br><br><button type="submit" id="submit">Submit</button>
+
+    </form>
+    <p id=" demo"></p>
+    <script>
+
+        const form = document.querySelector("form");
+
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            var score = 0;
+           if(document.getElementById('correct1').checked){
+            score++;
+           }
+           if(document.getElementById('correct2').checked){
+            score++;
+           }
+           if(document.getElementById('correct3').checked){
+            score++;
+           }
+           if(document.getElementById('correct4').checked){
+            score++;
+           }
+           if(document.getElementById('correct5').checked){
+            score++;
+           }
+           if(score>=3){
+            alert("You pass the test");
+           }
+           else{
+            alert("You fail");
+           }
+        })
+    </script>
+</body>
+
+</html>
