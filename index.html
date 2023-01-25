@@ -1,76 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
-</head>
+  </head>
 
-<body>
-
-
-
-
-    
+  <body>
     <h1 class="head">Let's Knowledge your test</h1>
     <form id="quiz" name="quiz">
-        <p>1.Recently,'Shiomara Castro' has become the first female president of which
-            country?</p><br>
-        <input type="radio" name="question1" value="Honduras"  />Honduras
-        <input type="radio" name="question1" value="Panama"  />Panama
-        <input type="radio" name="question1" value="Haiti"  />Haiti
-        <input type="radio" name="question1" value="Nicaragua"  />Nicaragua
-        <br><br>
-        <p>2.Recently, which player has won the men's singles title in the
-            australian open 2022? </p><br>
-        <input type="radio" name="question2" value="Daniil Medvedev" />Daniil Medvedev
-        <input type="radio" name="question2" value="Roger Federer" >Roger Federer
-        <input type="radio" name="question2" value="Novak Djokovic" >Novak Djokovic
-        <input type="radio" name="question2" value="Rafael Nadal" >Rafael Nadal
-        <br><br>
-        <p>3.Recently,in which city India's largest EV Charging Station with 100
-            charging points has opened? </p><br>
-        <input type="radio" name="question3" value="Shimla" >Shimla
-        <input type="radio" name="question3" value="Jodhpur" >Jodhpur
-        <input type="radio" name="question3" value="Gurugram" >Gurugram
-        <input type="radio" name="question3" value="Gwalior" >Gwalior
-        <br><br>
-        <p>4.Recently,what is the rank of india in the 'coruption perception index'
-            for the year 2021 released?</p><br>
-        <input type="radio" name="question4" value="89th" >89th
-        <input type="radio" name="question4" value="94th" >94th
-        <input type="radio" name="question4" value="85th" >85th
-        <input type="radio" name="question4" value="78th" >78th
-        <br><br>
-        <p>5.Which ministry has released a comic book titled 'India's women unsung
-            heroes?</p><br>
-        <input type="radio" name="question5" value="Ministry of Education" id="q6">Ministry of Education
-        <input type="radio" name="question5" value="Ministry of Defense" id="q6">Ministry of Defense
-        <input type="radio" name="question5" value="Ministry of Home Affairs" id="q6">Ministry of Home Affairs
-        <input type="radio" name="question5" value="Ministry of Culture" >Ministry of Culture
-        <br><br><input id="button" type="button" value="I am finished" onclick=" getResults();">
-
+      <p>
+        1.Recently,'Shiomara Castro' has become the first female president of
+        which country?
+      </p>
+      <br />
+      <input type="radio" name="question1" value="Honduras" />Honduras
+      <input type="radio" name="question1" value="Panama" />Panama
+      <input type="radio" name="question1" value="Haiti" />Haiti
+      <input type="radio" name="question1" value="Nicaragua" />Nicaragua
+      <br /><br />
+      <p>
+        2.Recently, which player has won the men's singles title in the
+        australian open 2022?
+      </p>
+      <br />
+      <input type="radio" name="question2" value="Daniil Medvedev" />Daniil
+      Medvedev
+      <input type="radio" name="question2" value="Roger Federer" />Roger Federer
+      <input type="radio" name="question2" value="Novak Djokovic" />Novak
+      Djokovic
+      <input type="radio" name="question2" value="Rafael Nadal" />Rafael Nadal
+      <br /><br />
+      <p>
+        3.Recently,in which city India's largest EV Charging Station with 100
+        charging points has opened?
+      </p>
+      <br />
+      <input type="radio" name="question3" value="Shimla" />Shimla
+      <input type="radio" name="question3" value="Jodhpur" />Jodhpur
+      <input type="radio" name="question3" value="Gurugram" />Gurugram
+      <input type="radio" name="question3" value="Gwalior" />Gwalior
+      <br /><br />
+      <p>
+        4.Recently,what is the rank of india in the 'coruption perception index'
+        for the year 2021 released?
+      </p>
+      <br />
+      <input type="radio" name="question4" value="89th" />89th
+      <input type="radio" name="question4" value="94th" />94th
+      <input type="radio" name="question4" value="85th" />85th
+      <input type="radio" name="question4" value="78th" />78th <br /><br />
+      <p>
+        5.Which ministry has released a comic book titled 'India's women unsung
+        heroes?
+      </p>
+      <br />
+      <input
+        type="radio"
+        name="question5"
+        value="Ministry of Education"
+        id="q6"
+      />Ministry of Education
+      <input
+        type="radio"
+        name="question5"
+        value="Ministry of Defense"
+        id="q6"
+      />Ministry of Defense
+      <input
+        type="radio"
+        name="question5"
+        value="Ministry of Home Affairs"
+        id="q6"
+      />Ministry of Home Affairs
+      <input
+        type="radio"
+        name="question5"
+        value="Ministry of Culture"
+      />Ministry of Culture <br /><br /><input
+        id="button"
+        type="button"
+        value="I am finished"
+        onclick=" getResults();"
+      />
     </form>
     <p id="demo"></p>
     <div id="after_submit">
-        <p id="number_correct">You finished good job</p>
-
-
+      <p id="number_correct">You finished good job</p>
     </div>
-
-
-
-
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>
